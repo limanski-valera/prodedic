@@ -1259,6 +1259,15 @@ input[type=number] {
   overflow: hidden;
 }
 
+.card__system picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .card__system img {
   max-width: 50%;
   max-height: 50%;

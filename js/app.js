@@ -2242,16 +2242,6 @@
         }));
     }
     if (document.querySelector(".filter-block__checkboxes") && document.querySelectorAll(".checkbox__input")) clickCheckboxAll();
-    function initFilterForm() {
-        const filterForm = document.querySelector("#filterForm");
-        const inputs = filterForm.querySelectorAll("input");
-        const selects = filterForm.querySelectorAll("select");
-        console.log(inputs, selects);
-        filterForm.addEventListener("send", (e => {
-            e.preventDefault();
-        }));
-    }
-    if (document.querySelector("#filterForm")) initFilterForm();
     window["FLS"] = true;
     isWebp();
     spollers();
