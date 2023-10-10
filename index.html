@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231011002738">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<section class="filter-block">
+			<div class="filter-block__container">
+				<aside data-spollers="768" data-one-select class="filter-block__sidebar">
+					<details class="spollers__item">
+						<summary class="spollers__title">Фильтр</summary>
+						<form id="filterForm" action="#" class="spollers__body">
+							<div class="filter-block__ranges">
+								<div id="core" class="filter-block__range range" data-from="0" data-to="100">
+									<div class="range__body">
+										<div class="range__inputs">
+											<input type="number" value="2" name="coreStart" class="range__input" data-start-value disabled />
+											<input type="number" value="96" name="coreEnd" class="range__input" data-end-value disabled />
+										</div>
+										<div class="range__place"></div>
+									</div>
+									<h3 class="range__label">Количество ядер</h3>
+								</div>
+								<div id="frequency" class="filter-block__range range" data-from="0" data-to="5">
+									<div class="range__body">
+										<div class="range__inputs">
+											<input type="number" value="1.8" name="frequencyStart" class="range__input" data-start-value disabled />
+											<input type="number" value="3.9" name="frequencyEnd" class="range__input" data-end-value disabled />
+										</div>
+										<div class="range__place"></div>
+									</div>
+									<h3 class="range__label">Частота ядер (GHz)</h3>
+								</div>
+								<div id="ram" class="filter-block__range range" data-from="0" data-to="4000">
+									<div class="range__body">
+										<div class="range__inputs">
+											<input type="number" value="2" name="ramStart" class="range__input" data-start-value disabled />
+											<input type="number" value="3072" name="ramEnd" class="range__input" data-end-value disabled />
+										</div>
+										<div class="range__place"></div>
+									</div>
+									<h3 class="range__label">Количество памятти (GB)</h3>
+								</div>
+							</div>
+							<select name="videoCard" data-show-selected data-class-modif="filter-block">
+								<option value="1" selected>Видеокарта (не важно)</option>
+								<option value="2">Видеокарта</option>
+								<option value="3">Видеокарта (важно)</option>
+							</select>
+							<select name="speed" data-show-selected data-class-modif="filter-block">
+								<option value="1" selected>100 Mbit</option>
+								<option value="2">500 Mbit</option>
+								<option value="3">1 Gbit</option>
+							</select>
+							<div class="filter-block__checkboxes">
+								<div class="checkbox">
+									<input id="c_all" class="checkbox__input" type="checkbox" value="all" name="formFaktor" />
+									<label for="c_all" class="checkbox__label"><span class="checkbox__text">Все варианты</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="formFaktor" />
+									<label for="c_1" class="checkbox__label"><span class="checkbox__text">SATA 3</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_2" class="checkbox__input" type="checkbox" value="2" name="formFaktor" />
+									<label for="c_2" class="checkbox__label"><span class="checkbox__text">SSD</span></label>
+								</div>
+								<div class="checkbox">
+									<input id="c_3" class="checkbox__input" type="checkbox" value="3" name="formFaktor" />
+									<label for="c_3" class="checkbox__label"><span class="checkbox__text">NVME</span></label>
+								</div>
+							</div>
+							<select name="country" data-show-selected data-class-modif="filter-block">
+								<option value="1" selected>Netherlands</option>
+								<option value="2">Ukraine</option>
+								<option value="3">USA</option>
+							</select>
+						</form>
+					</details>
+				</aside>
+				<div class="filter-block__body">
+					<div class="filter-block__cards">
+						<article class="filter-block__card card _promotion" data-one-select>
+							<header class="card__header">
+								<div class="card__logo">
+									<img src="img/fujitsi.svg" alt="fujitsi" />
+								</div>
+								<div class="card__body-header">
+									<div class="card__top-header">
+										<div class="card__flags">
+											<div class="card__flag">
+												<picture><source srcset="img/flag-nl.webp" type="image/webp"><img src="img/flag-nl.png" alt="" /></picture>
+											</div>
+											<div class="card__flag">
+												<picture><source srcset="img/flag-ger.webp" type="image/webp"><img src="img/flag-ger.png" alt="" /></picture>
+											</div>
+											<div class="card__flag">
+												<picture><source srcset="img/flag-usa.webp" type="image/webp"><img src="img/flag-usa.png" alt="" /></picture>
+											</div>
+										</div>
+										<span class="card__promotion"> -20% </span>
+									</div>
+									<h3 class="card__title">Fujitsu PRIMERGY RX1330 M3</h3>
+								</div>
+							</header>
+							<div class="card__content">
+								<div class="card__items">
+									<div class="card__item item-card">
+										<div class="item-card__image">
+											<picture><source srcset="img/icon-01.webp" type="image/webp"><img src="img/icon-01.png" alt="" /></picture>
+										</div>
+										<select name="card" data-class-modif="card-selecet">
+											<option value="1" selected>
+												2x Xeon Platinum 9600 (96x 2.10GHz)
+											</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+									</div>
+									<div class="card__item item-card">
+										<div class="item-card__image">
+											<picture><source srcset="img/icon-02.webp" type="image/webp"><img src="img/icon-02.png" alt="" /></picture>
+										</div>
+										<div class="item-card__video-card" data-pseudo-label="CUDA Cores: 768 / TFLOPS: 2.1">
+											Nvidia GTX 1050TI 4GB
+										</div>
+									</div>
+									<div class="card__item item-card">
+										<div class="item-card__image">
+											<picture><source srcset="img/icon-03.webp" type="image/webp"><img src="img/icon-03.png" alt="" /></picture>
+										</div>
+										<select name="card" data-class-modif="card-selecet" data-pseudo-label="(max: 1024GB)">
+											<option value="1" selected>128GB DDR4 ECC</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+									</div>
+									<div class="card__item item-card">
+										<div class="item-card__image">
+											<picture><source srcset="img/icon-04.webp" type="image/webp"><img src="img/icon-04.png" alt="" /></picture>
+										</div>
+										<select name="card" data-class-modif="card-selecet" data-pseudo-label="(max: 3 шт. SSD, SATA, NVME)">
+											<option value="1" selected>
+												2x 960GB SSD Enterprice
+											</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+									</div>
+									<div class="card__item item-card">
+										<div class="item-card__image">
+											<picture><source srcset="img/icon-05.webp" type="image/webp"><img src="img/icon-05.png" alt="" /></picture>
+										</div>
+										<select name="card" data-class-modif="card-selecet">
+											<option value="1" selected>
+												250Mbit/s - unlimited
+											</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+									</div>
+								</div>
+								<div class="card__more-info">
+									<div class="card__systems">
+										<div class="card__system">
+											<picture><source srcset="img/logo-01.webp" type="image/webp"><img src="img/logo-01.png" alt="linux" /></picture>
+										</div>
+										<div class="card__system">
+											<picture><source srcset="img/logo-02.webp" type="image/webp"><img src="img/logo-02.png" alt="windows" /></picture>
+										</div>
+									</div>
+									<span class="card__text">IP-KVM iDRAC</span>
+								</div>
+							</div>
+							<footer class="card__footer">
+								<div class="card__prices">
+									<span class="card__price card__price--old">588 $/мес.</span>
+									<span class="card__price">490 $/мес.</span>
+								</div>
+								<div class="card__active">
+									<div class="card__special-offer">+HardRaid в подарок</div>
+									<a href="#" class="card__button button">Заказать</a>
+								</div>
+							</footer>
+						</article>
+						<article class="filter-block__card card" data-one-select>
+							<header class="card__header">
+								<div class="card__logo">
+									<img src="img/fujitsi.svg" alt="fujitsi" />
+								</div>
+								<div class="card__body-header">
+									<div class="card__top-header">
+										<div class="card__flags">
+											<div class="card__flag">
+												<picture><source srcset="img/flag-nl.webp" type="image/webp"><img src="img/flag-nl.png" alt="" /></picture>
+											</div>
+											<div class="card__flag">
+												<picture><source srcset="img/flag-ger.webp" type="image/webp"><img src="img/flag-ger.png" alt="" /></picture>
+											</div>
+											<div class="card__flag">
+												<picture><source srcset="img/flag-usa.webp" type="image/webp"><img src="img/flag-usa.png" alt="" /></picture>
+											</div>
+										</div>
+										<span class="card__promotion"> -20% </span>
+									</div>
+									<h3 class="card__title">Fujitsu PRIMERGY RX1330 M3</h3>
+								</div>
+							</header>
+							<div class="card__content">
+								<div class="card__items">
+									<div class="card__item item-card">
+										<div class="item-card__image">
+											<picture><source srcset="img/icon-01.webp" type="image/webp"><img src="img/icon-01.png" alt="" /></picture>
+										</div>
+										<select name="card" data-class-modif="card-selecet">
+											<option value="1" selected>
+												2x Xeon Platinum 9600 (96x 2.10GHz)
+											</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+									</div>
+									<div class="card__item item-card">
+										<div class="item-card__image">
+											<picture><source srcset="img/icon-03.webp" type="image/webp"><img src="img/icon-03.png" alt="" /></picture>
+										</div>
+										<select name="card" data-class-modif="card-selecet" data-pseudo-label="(max: 1024GB)">
+											<option value="1" selected>128GB DDR4 ECC</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+									</div>
+									<div class="card__item item-card">
+										<div class="item-card__image">
+											<picture><source srcset="img/icon-04.webp" type="image/webp"><img src="img/icon-04.png" alt="" /></picture>
+										</div>
+										<select name="card" data-class-modif="card-selecet" data-pseudo-label="(max: 3 шт. SSD, SATA, NVME)">
+											<option value="1" selected>
+												2x 960GB SSD Enterprice
+											</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+									</div>
+									<div class="card__item item-card">
+										<div class="item-card__image">
+											<picture><source srcset="img/icon-05.webp" type="image/webp"><img src="img/icon-05.png" alt="" /></picture>
+										</div>
+										<select name="card" data-class-modif="card-selecet">
+											<option value="1" selected>
+												250Mbit/s - unlimited
+											</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+									</div>
+								</div>
+								<div class="card__more-info">
+									<div class="card__systems">
+										<div class="card__system">
+											<picture><source srcset="img/logo-01.webp" type="image/webp"><img src="img/logo-01.png" alt="linux" /></picture>
+										</div>
+										<div class="card__system">
+											<picture><source srcset="img/logo-02.webp" type="image/webp"><img src="img/logo-02.png" alt="windows" /></picture>
+										</div>
+									</div>
+									<span class="card__text">IP-KVM iDRAC</span>
+								</div>
+							</div>
+							<footer class="card__footer">
+								<div class="card__prices">
+									<span class="card__price card__price--old">588 $/мес.</span>
+									<span class="card__price">490 $/мес.</span>
+								</div>
+								<div class="card__active">
+									<div class="card__special-offer">+HardRaid в подарок</div>
+									<a href="#" class="card__button button">Заказать</a>
+								</div>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="https://kit.fontawesome.com/7eaebef04a.js?_v=20231011002738" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20231011002738"></script>
+</body>
+
+</html>
